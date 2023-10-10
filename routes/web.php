@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/with', function () {
+    return view('with-livewire');
+});
+
+Route::get('/without', function () {
+    return view('without-livewire');
 });
